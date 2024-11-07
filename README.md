@@ -109,9 +109,20 @@ check: ✔️ wget success for https://example.com
 
 ---
 
+## Other notes:
+
+If you're running Windows 11 version 22H2 or later, you can resolve all network-related issues in WSL2 by switching its network mode to `mirrored`. This adjustment eliminates the need for wsl-vpnkit for network compatibility.
+
+To apply this change, edit your `.wslconfig` file and add the following setting:
+
+```bash
+[wsl2]
+networkingMode=mirrored
+```
+---
+
 ## Happy Coding!
 
-I hope this guide helps you resolve any issues with `wsl-vpnkit`. Happy coding!
-
+I hope this guide helps you resolve some issues with `wsl-vpnkit`. Happy coding!
 
 
